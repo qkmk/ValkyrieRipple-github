@@ -1,0 +1,25 @@
+Valkyrie Ripple
+Copyright (C) 2026
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+--------------------------------------------------------------------
+
+本项目的键盘 HID 通信协议 (valkyrie_driver.py 中的键码表、初始化/终止包、
+分批发送逻辑) 移植自 OpenRGB 项目的 ValkyrieKeyboardController, 该部分
+版权归 OpenRGB 贡献者所有, 以 GPL-2.0-or-later 授权:
+
+    https://gitlab.com/CalcProgrammer1/OpenRGB
+    Controllers/ValkyrieKeyboardController/
+    原作者: Nollie (Nuonuo), Bartholomew Ho (imnotmental)
+
+因此本项目整体采用 GPL-2.0-or-later 许可。完整协议文本见:
+    https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
