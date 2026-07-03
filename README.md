@@ -1,11 +1,15 @@
 # Valkyrie Ripple ⌨️🌊
 
-为 **Valkyrie VK99** 机械键盘打造的**按键涟漪光效**程序。
+为 **狼蛛 F98**（Aula F98）机械键盘打造的**按键涟漪光效**程序。
 
 按下任意键，就会从该键位置泛起一圈涟漪，向外扩散并淡出；连续按同一个键可得到
 彩虹渐变的涟漪。不按键时键盘保持全黑。
 
 **自带 HID 驱动，直接驱动键盘，无需 OpenRGB 或任何后台服务。**
+
+> 📝 **关于名字**：这块键盘实际是**狼蛛 F98**，但 OpenRGB 把它识别成了
+> "Valkyrie VK99"（VID `0x05AC` / PID `0x024F`，应是共用固件的 OEM 同款），
+> 所以本项目里的驱动、布局、程序名都沿用了 `Valkyrie` 这个叫法。二者是同一块键盘。
 
 ![涟漪图标](ripple.ico)
 
@@ -94,7 +98,7 @@ pyinstaller --onefile --noconsole --uac-admin ^
 
 ## 🔧 换成别的键盘？
 
-本程序针对 Valkyrie VK99 的布局和 HID 协议。若要移植到其它键盘：
+本程序针对 狼蛛 F98（OpenRGB 识别为 Valkyrie VK99）的布局和 HID 协议。若要移植到其它键盘：
 
 1. `valkyrie_driver.py` 里的键码表和发送协议需换成目标键盘的（可参考 OpenRGB
    对应型号的 `Controllers/` 源码）。
